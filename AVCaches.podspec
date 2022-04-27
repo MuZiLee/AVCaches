@@ -24,26 +24,26 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks   = "UIKit","AVFoundation","SystemConfiguration","MobileCoreServices"
 
-  s.source_files        = 'Source/TTPlayerCache/TTPlayerCache.h'
-  s.public_header_files = 'source/TTPlayerCache/TTPlayerCache.h'
+  s.source_files        = 'Source/AVCaches/TTPlayerCache.h'
+  s.public_header_files = 'source/AVCaches/TTPlayerCache.h'
 
 
   s.subspec 'Reachability' do |ss|
-    ss.source_files        = 'Source/TTPlayerCache/Reachability/*.{h,m}'
-    ss.public_header_files = 'Source/TTPlayerCache/Reachability/*.h'
+    ss.source_files        = 'Source/AVCaches/Reachability/*.{h,m}'
+    ss.public_header_files = 'Source/AVCaches/Reachability/*.h'
   end
 
   s.subspec 'Category' do |ss| 
-    ss.source_files        = 'Source/TTPlayerCache/Category/*.{h,m}'
-    ss.public_header_files = 'Source/TTPlayerCache/Category/*.h'
+    ss.source_files        = 'Source/AVCaches/Category/*.{h,m}'
+    ss.public_header_files = 'Source/AVCaches/Category/*.h'
   end
 
-  s.subspec 'PlayerCache' do |ss|
-    ss.dependency 'TTPlayerCache/Category'
-    ss.dependency 'TTPlayerCache/Reachability'
+  s.subspec 'AVCaches' do |ss|
+    ss.dependency 'AVCaches/Category'
+    ss.dependency 'AVCaches/Reachability'
 
-    ss.source_files        = 'Source/TTPlayerCache/TTPlayerCacheMacro.h', 'Source/TTPlayerCache/TTResourceLoader{Delegate,Data,Cache}.{h,m}'
-    ss.public_header_files = 'Source/TTPlayerCache/TTPlayerCacheMacro.h', 'Source/TTPlayerCache/TTResourceLoader{Delegate,Data,Cache}.h'
+    ss.source_files        = 'Source/AVCaches/TTPlayerCacheMacro.h', 'Source/AVCaches/TTResourceLoader{Delegate,Data,Cache}.{h,m}'
+    ss.public_header_files = 'Source/AVCaches/TTPlayerCacheMacro.h', 'Source/AVCaches/TTResourceLoader{Delegate,Data,Cache}.h'
   end
 
 end
