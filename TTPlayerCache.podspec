@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "TTPlayerCache"
+  s.name         = "AVCaches"
   s.version      = "0.2.0"
-  s.summary      = "A cache for AVPlayer of TTPlayerCache."  
+  s.summary      = "A cache for AVPlayer of AVCaches."  
   s.homepage     = "https://github.com/MuZiLee/AVCaches"
   s.license      = "MIT"
   s.author       = { "sun" => "1919345806@qq.com" }
