@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "UIKit","AVFoundation","SystemConfiguration","MobileCoreServices"
 
   s.source_files        = 'Source/AVCaches/TTPlayerCache.h'
-  s.public_header_files = 'source/AVCaches/TTPlayerCache.h'
+  s.public_header_files = 'source/AVCaches/TTPlayerCache.h','source/AVCaches/TTPlayerCache-Swift.h'
 
 
   s.subspec 'Reachability' do |ss|
